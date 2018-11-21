@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/person2"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한예지님"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <TextView
+                android:id="@+id/userPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010-1234-5678"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yeji9175@naver.com"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="134dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        app:layout_constraintVertical_bias="0.334">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:onClick="onLogoutButtonClicked"
+                android:text="로그아웃"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:onClick="onWithdrawButtonClicked"
+                android:text="회원탈퇴"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:onClick="onModifyButtonClicked"
+                android:text="회원정보수정"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:onClick="onVersionButtonClicked"
+                android:text="버전정보"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:onClick="onSettingButtonClicked"
+                android:text="설정"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"
+                android:onClick="onInquiryButtonClicked"
+                android:text="이용문의"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
